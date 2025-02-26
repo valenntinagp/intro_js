@@ -3,47 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuadro de texto y botón</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            text-align: center;
-        }
-        input[type="text"] {
-            padding: 10px;
-            font-size: 16px;
-            width: 300px;
-            margin-right: 10px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
+    <title>Contar letras</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
+    <form action="">
+        <input type="text" id="text1" placeholder="Escribe algo">
+        <button id="boton1">Clickeame!!!</button>
+    </form>
 
-<div class="container">
-    <input type="text" id="myText" placeholder="Escribe algo aquí">
-    <button onclick="mostrarTexto()">Mostrar Texto</button>
-    <p id="result"></p>
-</div>
-
-<script>
-    function mostrarTexto() {
-        var texto = document.getElementById('myText').value;
-        document.getElementById('result').textContent = 'El texto ingresado es: ' + texto;
-    }
-</script>
-
+    <div id="resultado"></div> <!-- Aquí se mostrará el resultado -->
+    
+    <script src="program.js"></script>
 </body>
 </html>
